@@ -40,7 +40,7 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 }
 .cta-btn:hover{color:#fff}
 @media (max-width:600px){
-.cta-btn{width:100%;font-size:18px;margin:10px auto 0}
+.cta-btn{width:100%;font-size:16px;margin:10px auto 0; padding:5px 20px;}
 }
 /*==========================================*/
 /* Banner css*/
