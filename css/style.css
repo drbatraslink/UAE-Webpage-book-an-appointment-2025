@@ -25,6 +25,23 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 @media (max-width:375px){
 .main-all-heading{margin-bottom:0;font-size:26px;text-transform:uppercase;font-weight:600;text-align:center;color:#173d5b;line-height:normal;}
 }
+
+.cta-btn{width:350px;text-align:center;margin:20px auto 0;padding:8px 20px;background:linear-gradient(135deg,#970000 0,#ed0202 25%,#f70000 50%,#ed0202 75%,#970000 100%);display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-size:16px;font-weight:700;border-radius:25px;text-decoration:none}
+.cta-btn img{animation:blinkBounce 1.9s ease-in-out infinite;display:inline-block;font-weight:700}
+.cta-btn{animation:blinkBounceBg 1.9s ease-in-out infinite;display:inline-block;font-weight:700}
+.blink-text{font-weight:700}
+@keyframes blinkBounce{
+0%,100%{transform:translateY(0);color:#fff;filter:brightness(0) invert(1)}
+50%{transform:translateY(-5px);color:#e41225;filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(6020%) hue-rotate(1deg);}
+}
+@keyframes blinkBounceBg{
+0%,100%{color:#fff;border:1px solid #e41225}
+50%{border:1px solid #e41225;background:0 0;color:#e41225}
+}
+.cta-btn:hover{color:#fff}
+@media (max-width:600px){
+.cta-btn{width:100%;font-size:18px;margin:10px auto 0}
+}
 /*==========================================*/
 /* Banner css*/
 /*==========================================*/
@@ -54,11 +71,12 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 }
 @media (max-width:600px){
 .hair_banner_content{padding-top: 30px}
-.hair_banner_content h1{font-weight:500;color:#474747;font-size:24px}
-.hair_banner_content h2{font-weight:700;color:#0b4481;font-size:32px;line-height:normal;}
-.img_banner_unit{width:65%}
-.banner_list_item_google_rating img{width: 120px}
-.banner_list_item_google_rating li{font-size: 12px;font-weight:600;color: #ffffff;padding-right:10px}
+.hair_banner_content h1{font-weight:500;color:#474747;font-size: 21px;}
+.hair_banner_content h2{font-weight:700;color:#0b4481;font-size: 26px;line-height:normal;}
+.img_banner_unit{width: 60%;}
+.banner_list_item_google_rating img{width: 110px;}
+.banner_list_item_google_rating li{font-size: 10px;font-weight:600;color: #ffffff;padding-right: 6px;}
+.banner-img-css{margin-top: -20px}
 }
 
 /*==========================================*/
@@ -88,10 +106,16 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 .blue-band-padding-new-css{padding:0 15px}
 .border-right-css-n-band{border-right:none}
 .blue-band-offer-heading{font-size:24px}
-.small_white_offer_offer{float:right;font-size:10px;font-weight:600;color:#fff;margin-top:15px;margin-bottom:0}
+.small_white_offer_offer{float:right;font-size:8px;font-weight:600;color:#fff;margin-top:8px;margin-bottom:0}
 }
 @media(max-width:600px){
-.offer-new-para-css{margin-bottom:0;color:#fff;font-size:14px;line-height:normal}
+.offer-new-para-css{margin-bottom:0;color:#fff;font-size:12px;line-height:normal}
+.percntageband-heading {
+    font-size: 20px;}
+    .offer-background-sec-new {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
 }
 
 /*==========================================*/
@@ -118,7 +142,7 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 .treatment_offer_sec_new h2 span{font-weight:400;color:#212121;font-size:24px}
 .treatment_hair_clinic_pro{font-size:21px;font-weight:600;color:#212121}
 @media(max-width:1024px){
-.owl-item .item{transform:translate3d(0,0,0);padding:30px 30px 20px}
+#tratment_slider .owl-item .item{transform:translate3d(0,0,0);padding:30px 30px 20px}
 #tratment_slider .owl-nav{text-align:center!important;margin-top:15px;top:0;right:0;position:relative}
 #tratment_slider .owl-nav button{font-size:30px!important;margin:0 10px;color:#000!important}
 }
@@ -195,7 +219,7 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 .types_of_hair .owl-item{border-right:1px solid #fff;padding-right:10px}
 .types_of_hair .owl-item .item img{margin:auto}
 .types_of_hair .owl-item .item{transform:translate3d(0,0,0);padding:10px}
-.types_of_hair .owl-nav{text-align:center;top:-65px;position:absolute;right:5px}
+.types_of_hair .owl-nav{text-align:center;top:-35px;position:absolute;right:5px}
 .types_of_hair .owl-nav button{font-size:30px!important;margin:0 7px;color:#000!important}
 @media (max-width:1024px){
 .types_of_hair .owl-nav{text-align:center!important;margin-top:15px;top:0;right:0;position:relative}
@@ -389,4 +413,32 @@ header{background:#383838;min-height:60px;display:-webkit-box;display:-ms-flexbo
 .treatment_all_comm_div_new_book_an_appoinment .form_custom_heading_testmonilas{margin-bottom:12px;font-size:24px!important;text-align:center;font-weight:400;color:#212121;line-height:normal}
 .treatment_all_comm_div_new_book_an_appoinment .form_custom_heading_testmonilas span{font-weight:600;color:#187fc3}
 .treatment_all_comm_div_new_book_an_appoinment .btn_custom_testmonilas{font-size:16px!important}
+}
+
+/*==========================================*/
+/* Google Slider css*/
+/*==========================================*/
+.treatment_all_comm_div.google_slider_section{padding:30px 0 50px 0}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-dots{display:none}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item{margin-top:10px;margin-bottom:10px;background-color:#fff;border-radius:8px;text-align:left;padding:0;box-shadow:0 1px 12px 0 #eee;border:1px solid #fff}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .content_google{padding:15px;height:390px;max-height:420px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .content_google img{width:100px;padding-top:5px;padding-bottom:5px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .google_heding{font-size:21px;color:#212121;font-weight:600;margin-bottom:0}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .google_para{color:#757575;font-size:14px;margin-bottom:0;font-weight:400}
+.treatment_all_comm_div .google_slider .owl-prev,.treatment_all_comm_div.google_slider_section .google_slider .owl-next{position:absolute;top:-5px;height:100%}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-prev{left:-15px;background-color:transparent!important}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-next{right:-15px;background-color:transparent!important}
+@media(max-width:768px){
+.treatment_all_comm_div.google_slider_section{padding-top:30px}
+}
+@media(max-width:600px){
+.treatment_all_comm_div.google_slider_section{padding-top:40px;padding-bottom:30px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-nav{position:relative;display:flex;justify-content:center;margin-top:15px;margin-bottom:0}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-next,.treatment_all_comm_div.google_slider_section .google_slider .owl-prev{position:relative;background-color:transparent;font-size:30px;color:#000;border:none}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-nav button{margin:0 5px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-prev{left:0}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-next{right:0}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .google_heding{font-size:18px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .google_para{font-size:12px}
+.treatment_all_comm_div.google_slider_section .google_slider .owl-item .content_google{padding:15px;height:280px;max-height:300px}
 }
